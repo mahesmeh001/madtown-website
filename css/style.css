@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #ee1818;
-    --secondary: #0c0000;
-    --light: #ed8723;
-    --dark: #100101;
+    --primary: #89067F;
+    --secondary: #3A00CC;
+    --light: #FFEECF;
+    --dark: #141414;
 }
 
 .back-to-top {
@@ -177,8 +177,9 @@
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    /*background-color: var(--primary);*/
+    background-color: rgba(255,255,255,0);
+    /*border: 10px solid var(--primary);*/
 }
 
 @media (max-width: 768px) {

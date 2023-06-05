@@ -22,7 +22,6 @@ WORKSPACE
 
 <!--        INSTA AND FACEBOOK EMBEDS -->
 
-
 <!--        <div class="row">-->
 <!--            <div class="col">-->
 <!--                <blockquote class="instagram-media"-->
