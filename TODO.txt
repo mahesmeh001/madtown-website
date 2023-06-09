@@ -1,5 +1,5 @@
 Stuff I want for the website from other ppl:
--
+- navbar on mobile needs to make sense
 - website hype video asap (last years works for now, just need it as a youtube embed)
 
 
