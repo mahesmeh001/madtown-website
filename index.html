@@ -86,56 +86,6 @@
 <!-- Topbar End -->
 
 
-<!-- Carousel Background Start -->
-<!--carousel pics are cropped at 16 by 9 -->
-<div class="container-fluid px-0 m-0" style=";">
-    <div class="carousel slide" data-bs-ride="carousel" id="header-carousel">
-        <div class="carousel-inner" style="height: 105vh">
-
-            <div class="carousel-item active" style="height: 105vh; background-image: url('img/bhangra-background-2-flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
-                <img alt="Image" class="h-100" src="img/bhangra-background-2.jpg">
-                <div class="carousel-caption">
-                    <div class="container" >
-                        <div class="row justify-content-end">
-                            <div class="col-lg-8 text-end">
-                                <p class="fs-4 text-white">Welcome to Madison's</p>
-                                <h1 class="display-1 text-white mb-5 animated slideInRight">Madtown Bhangra</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item" style="height: 105vh; background-image: url('img/cool negative space flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
-                <img alt="Image" class="h-100" src="img/cool%20negative%20space.jpg">
-                <div class="carousel-caption" style="min-height: 650px">
-                    <div class="container" >
-                        <div class="row">
-                            <div class="col-lg-4 text-start">
-                                <p class="fs-4 text-white">Welcome to Madison's</p>
-                                <h1 class="display-1 text-white mb-5 animated slideInRight">Madtown Bhangra</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-<!-- Carousel End -->
-
 <!-- Navbar Start -->
 <nav id="navbarBackground" class="navbar navbar-expand-lg sticky-top navbar-dark px-4 px-lg-5" id="navbar" style="background-color: black">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -170,6 +120,59 @@
 <!--    bg-white-->
 <!-- Navbar End -->
 
+<!-- Carousel Background Start -->
+<!--carousel pics are cropped at 16 by 9 -->
+<!--TODO - crop second background image so the heads align on mobile-->
+<div class="container-fluid px-0 m-0" style=";">
+    <div class="carousel slide" data-bs-ride="carousel" id="header-carousel">
+        <div class="carousel-inner" style="height: 105vh">
+
+            <div class="carousel-item active" style="height: 105vh; background-image: url('img/bhangra-background-2-flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
+                <img alt="Image" class="h-100" src="img/bhangra-background-2.jpg">
+                <div class="carousel-caption">
+                    <div class="container" >
+                        <div class="row justify-content-end">
+                            <div class="col-lg-8 text-end">
+                                <p class="fs-4 text-white">Welcome to Madison's</p>
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">Madtown Bhangra</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 105vh; background-image: url('img/cool negative space flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
+                <img alt="Image" class="h-100" src="img/cool%20negative%20space.jpg">
+                <div class="carousel-caption" style="min-height: 650px">
+                    <div class="container" >
+                        <div class="row">
+                            <div class="col-lg-4 text-start">
+                                <p class="fs-4 text-white">Welcome to Madison's</p>
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">Madtown Bhangra</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="prevButton" class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="nextButton" class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+
 <!--The Fold / Interesting Videos-->
 <!--style things: style="width: 100%; max-width: 533px", height = "280"-->
 <div class="container-fluid container my-5"
@@ -202,6 +205,7 @@
 
 
 <!--Parallax scrolling banner-->
+<!--images must not have spaces-->
 <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/saapsDiagonalVintage.jpg">
     <div class="container py-5 my-auto col-2" style="text-align: center">
         <div class="row">
@@ -399,6 +403,22 @@
 
 </script>
 
+<!--makes buttons invisible when there is text overlap (just on the first screen)-->
+<script>
+    let width = screen.width;
+    let prev = document.getElementById("prevButton");
+    let next = document.getElementById("nextButton");
+
+if ((width>=650 && width<=767) || (width>=855 && width<=991) || (width>=1145 && width<=1199) || (width>=1361 && width<=1399) || width>=1565) {
+    prev.style.visibility='visible';
+    next.style.visibility='visible';
+    }
+else{
+    prev.style.visibility='hidden';
+    next.style.visibility='hidden';
+}
+
+</script>
 
 </body>
 
