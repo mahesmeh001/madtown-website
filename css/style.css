@@ -99,6 +99,8 @@
     outline: none;
 }
 
+
+/* TODO - change active to be italicized and underlined and not centered*/
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active-light {
     padding: 2px 10px;align-self: center; border: thin solid white;}
