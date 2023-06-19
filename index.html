@@ -9,7 +9,7 @@
     <meta content="Website for Madison Wisconsin's premier bhangra competition" name="description">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico?"/>
+    <link href="img/favicon.ico?" rel="icon"/>
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -33,6 +33,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!--    retro font family-->
+    <link href="fonts/sawarabi/stylesheet.css" rel="stylesheet">
+    <link href="fonts/arsenica/stylesheet.css" rel="stylesheet">
+
+
+
     <style>
         .overlay {
             opacity: 0.5;
@@ -44,11 +50,12 @@
             left: 0;
             position: relative;
         }
+
     </style>
 
 </head>
 
-<body>
+<body style="font-family: 'sawarabi_minchoregular'">
 <!-- Spinner Start -->
 <div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
      id="spinner">
@@ -87,11 +94,13 @@
 
 
 <!-- Navbar Start -->
+<!--TODO : change so that logo is visible and madtown is display:none until scroll when both are visible-->
+<!--https://www.geeksforgeeks.org/what-is-the-difference-between-visibilityhidden-and-displaynone/#-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark px-4 px-lg-5" id="navbarBackground" id="navbar"
      style="background-color: black">
-    <a id="madtown" class="navbar-brand d-flex align-items-center m-fadeOut" href="index.html">
+    <a class="navbar-brand d-flex align-items-center m-fadeOut" href="index.html" id="madtown">
         <h1 class="m-0 text-white">Madtown</h1>
-        <img src="img/favicon.ico" alt="logo" style="height: 75px; width: 75px"/>
+        <img alt="logo" src="img/favicon.ico" style="height: 75px; width: 75px"/>
     </a>
 
     <button class="navbar-toggler me-0" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
@@ -131,8 +140,8 @@
         <div class="carousel-inner" style="height: 105vh">
 
             <div class="carousel-item active"
-                 style="height: 105vh; background-image: url('img/bhangra-background-2-flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
-                <img alt="Image" class="h-100" src="img/bhangra-background-2.jpg">
+                 style="height: 105vh; background-image: url('img/Homepage/VINTAGE-reversed-bhangra-background-1.jpg'); background-size: contain; background-repeat: repeat-x;">
+                <img alt="Image" class="h-100" src="img/Homepage/VINTAGE-bhangra-background-1.jpg">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-end">
@@ -147,8 +156,8 @@
 
             <!-- TODO - make this pic grainy to match the style of the first one-->
             <div class="carousel-item"
-                 style="height: 105vh; background-image: url('img/cool negative space cropped flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
-                <img alt="Image" class="h-100" src="img/cool%20negative%20space%20cropped.jpg">
+                 style="height: 105vh; background-image: url('img/Homepage/VINTAGE-reversed-bhangra-background-2.jpg'); background-size: contain; background-repeat: repeat-x;">
+                <img alt="Image" class="h-100" src="img/Homepage/VINTAGE-bhangra-background-2.jpg">
                 <div class="carousel-caption" style="min-height: 650px">
                     <div class="container">
                         <div class="row">
@@ -160,6 +169,24 @@
                     </div>
                 </div>
             </div>
+
+            <!-- TODO - make this add different pic-->
+            <div class="carousel-item"
+                 style="height: 105vh; background-image: url('img/cool negative space cropped flipped.jpg'); background-size: contain; background-repeat: repeat-x;">
+                <img alt="Image" class="h-100" src="img/cool%20negative%20space%20cropped.jpg">
+                <div class="carousel-caption" style="min-height: 650px">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 text-start">
+                                <p class="fs-4 text-white">Teams pick their charities</p>
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">Philanthropic Initiative</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
 
@@ -186,16 +213,16 @@
         <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen frameborder="0"
                 height="280"
-                style="width: 100%; max-width: 533px"
                 src="https://www.youtube.com/embed/XQtkJLvxuWc"
+                style="width: 100%; max-width: 533px"
                 title="YouTube video player"></iframe>
 
-<!--        if you want a second video, replace the commented out part with the video-->
-<!--        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-<!--                allowfullscreen frameborder="0"-->
-<!--                height="280" src="https://www.youtube.com/embed/jI8ds36Waf4"-->
-<!--                style="width: 100%; max-width: 533px"-->
-<!--                title="Buckeye Mela XVI Lineup Video"></iframe>-->
+        <!--        if you want a second video, replace the commented out part with the video-->
+        <!--        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+        <!--                allowfullscreen frameborder="0"-->
+        <!--                height="280" src="https://www.youtube.com/embed/jI8ds36Waf4"-->
+        <!--                style="width: 100%; max-width: 533px"-->
+        <!--                title="Buckeye Mela XVI Lineup Video"></iframe>-->
     </div>
 </div>
 
@@ -206,8 +233,8 @@
         <p style="text-align: start; margin-top: auto">
             <!--            <h1 style="text-decoration: underline">Our Mission</h1>-->
             Madtown Bhangra aims to celebrate South Asian culture in the U.S. by providing a platform for the nation's
-            most talented collegiate Bhangra teams to perform from the comfort of their hometown. The organization
-            strives to channel the competitive spirit of MTB towards fundraising for the various charity organizations
+            most talented collegiate Bhangra teams to perform. The organization strives to channel the competitive
+            spirit of MTB towards fundraising for the various charity organizations
             chosen by the competing teams. Located in the vibrant Midwest campus town of Madison, MTB is a new central
             point for Bhangra teams from the East and West coast, as well as everywhere in between, to come together and
             showcase the rich Punjabi heritage and history through traditional music and dance. MTB's mission is to
@@ -219,7 +246,7 @@
 
 <!--Parallax scrolling banner-->
 <!--images must not have spaces-->
-<div class="container-fluid banner my-5 py-5" data-image-src="img/saapsDiagonalCropped.JPG" data-parallax="scroll">
+<div class="container-fluid banner my-5 py-5" data-image-src="img/Homepage/VINTAGE-saaps-diagonal.jpg" data-parallax="scroll">
     <div class="container py-5 my-auto col-2" style="text-align: center">
         <div class="row">
             <div class="col my-4">
