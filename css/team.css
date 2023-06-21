@@ -1,0 +1,24 @@
+.display-title{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.display-subtitle{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.display-table-contents{
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.display-firstname{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.display-lastname{
+    font-weight: bold;
+    font-size: 30px;
+}

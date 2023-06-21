@@ -35,12 +35,16 @@
     <link href="fonts/sawarabi/stylesheet.css" rel="stylesheet">
     <link href="fonts/arsenica/stylesheet.css" rel="stylesheet">
 
-<!--    font awesome-->
+    <!--    font awesome-->
     <script src="https://kit.fontawesome.com/29aab85ed6.js" crossorigin="anonymous"></script>
+
+    <!--    stylesheet for this page-->
+    <link href="css/team.css" rel="stylesheet">
 
 </head>
 
-<body style="font-family: 'arsenica_trialthin'; background-color: black">
+<body style="font-family: 'arsenica_trialthin'; background-color: black; font-weight: 100">
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
@@ -91,40 +95,42 @@
     <!--Hero and table of contents-->
     <div class="container-fluid justify-content-center" style="background-color: black; height: 100vh">
         <div class="container pt-5 text-center" style="color: white">
-            <p class=" display-1 pt-5" >Meet the Team</p>
-            <div id="contents" style="font-family: 'arsenica_trialthin_italic';" class="pb-5">
+            <p class="display-title" >Meet the Team</p>
+            <div id="contents" style="font-family: 'arsenica_trialthin_italic';" class="display-table-contents pb-5">
                 <a href="#marketing" style="color: white">
-                    <p class="" style="font-size: xx-large">Marketing</p>
+                    <p class="">Marketing</p>
                 </a>
-                <a href="#" style="color: white">
-                    <p class="" style="font-size: xx-large">Fundraising</p>
+                <a href="#fundraising" style="color: white">
+                    <p class="">Fundraising</p>
                 </a>
-                <a href="#" style="color: white">
-                    <p class="" style="font-size: xx-large">Directors</p>
+                <a href="#directors" style="color: white">
+                    <p class="">Directors</p>
                 </a>
-                <p class="" style="font-size: xx-large"> . </p>
-                <p class="" style="font-size: xx-large"> . </p>
-                <p class="" style="font-size: xx-large"> . </p>
+                <p class="" > . </p>
+                <p class="" > . </p>
+                <p class="" > . </p>
 
             </div>
-            <i class="fa fa-thin fa-angle-down fa-2xl" style="color: #ffffff;"></i>
+            <a href="#marketing">
+                <i class="fa fa-thin fa-angle-down fa-2xl" style="color: #ffffff;"></i>
+            </a>
         </div>
     </div>
 
 
-
+    <!--marketing-->
     <div class="container-fluid wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="marketing">
         <div class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner w-100">
 
                 <div class="carousel-item active"
-                     style="height: 100vh; background-image: url('img/Team/marketing-overlay.png'); background-size: contain; background-repeat: repeat-x;">
-                    <img alt="Image" class="h-100" src="img/Team/marketing-overlay.png">
+                     style="height: auto; background-image: url('img/Team/marketing-overlay.png'); background-size: contain; background-repeat: repeat-x;">
+                    <img alt="Image" class="w-100" src="img/Team/marketing-overlay.png">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
-                                    <p class="display-2 text-white">Marketing</p>
+                                    <p class="display-subtitle text-white">Marketing</p>
                                 </div>
                             </div>
                         </div>
@@ -136,52 +142,53 @@
     </div>
 
 
-
+    <!--marketing individuals-->
     <div class="container-fluid justify-content-center p-0 m-0">
         <div class="row">
 
             <div class="col-sm px-0 mx-0">
 
-                <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="">
-                    <div class="carousel slide" data-bs-ride="carousel" >
-                        <div class="carousel-inner w-100">
+                <a href="https://mahesmeh001.github.io/mypersonalwebsite/index.html">
 
-                            <div class="carousel-item active"
-                                 style="background-image: url('img/Team/marketing-overlay.png'); background-size: contain; background-repeat: repeat-x;">
-                                <img alt="Image" class="w-100" src="img/Team/mehul-cropped.jpg">
-                                <div class="carousel-caption">
-                                    <div class="container">
-                                        <div class="row justify-content-start">
-                                            <div class="col-lg-8 text-start">
-                                                <p class="display-4 text-white">Mehul</p>
-                                                <p class="display-6 text-white">Maheshwari</p>
+                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="mehul">
+                        <div class="carousel slide" data-bs-ride="carousel" >
+                            <div class="carousel-inner w-100">
+
+                                <div class="carousel-item active">
+                                    <img alt="Image" class="w-100" src="img/Team/mehul-cropped.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row justify-content-start">
+                                                <div class="col-lg-8 text-start">
+                                                    <p class="display-firstname text-white">Mehul</p>
+                                                    <p class="display-lastname text-white">Maheshwari</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-            </div>
+            </div> <!--end of column-->
 
             <div class="col-sm px-0 mx-0">
 
-                <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="">
+                <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="kajal">
                     <div class="carousel slide" data-bs-ride="carousel" >
                         <div class="carousel-inner w-100">
 
-                            <div class="carousel-item active "
-                                 style="background-image: url('img/Team/marketing-overlay.png'); background-size: contain; background-repeat: repeat-x;">
-                                <img alt="Image" class="w-100" src="img/Team/marketing-overlay.png">
+                            <div class="carousel-item active">
+                                <img alt="Image" class="w-100" src="img/Team/marketing-overlay-close-cropped.png">
                                 <div class="carousel-caption">
                                     <div class="container">
                                         <div class="row justify-content-end">
                                             <div class="col-lg-8 text-end">
-                                                <p class="display-4 text-white">Kajal</p>
-                                                <p class="display-6 text-white">Dharmar</p>
+                                                <p class="display-firstname text-white">Kajal</p>
+                                                <p class="display-lastname text-white">Dharmar</p>
                                             </div>
                                         </div>
                                     </div>
@@ -192,9 +199,10 @@
                     </div>
                 </div>
 
-            </div>
 
-        </div>
+            </div> <!--end of column-->
+
+        </div> <!--end row-->
     </div>
 
 
