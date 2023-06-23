@@ -39,3 +39,19 @@
 .individuals{
     font-family: 'arsenica_trialthin_italic';
 }
+
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.zoom img{
+    transition: all 0.4s;
+}
+
+.blur {
+    filter: blur(30px);
+    transition: filter 1s linear;
+}

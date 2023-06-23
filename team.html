@@ -106,8 +106,8 @@
                 <a href="#directors" style="color: white">
                     <p class="">Directors</p>
                 </a>
-                <a href="#liason" style="color: white">
-                    <p class="">Head Liasons</p>
+                <a href="#liaison" style="color: white">
+                    <p class="">Head Liaisons</p>
                 </a>
                 <p class="" > . </p>
                 <p class="" > . </p>
@@ -126,15 +126,17 @@
         <div class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner w-100">
 
-                <div class="carousel-item active group-banner"
+                <div class="carousel-item active group-banner zoom" onclick="marketingToggle()"
                      style="background-image: url('img/Team/marketing-overlay.png')">
-                    <img alt="Image" class="w-100" src="img/Team/marketing-overlay.png">
+                    <img id="marketingImage" alt="Image" class="w-100" src="img/Team/marketing-overlay.png">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
-                                    <p class="display-subtitle text-white">Marketing</p>
-                                    <p class="display-description"></p>
+                                    <p id="marketingTitle" class="display-subtitle text-white m-fadeIn">Marketing</p>
+                                    <p id="marketingDescription" class="display-description" style="display: none">
+                                        Responsible for Madtown branding, all social media, and designing and developing the website!
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +155,7 @@
 
             <div class="col-sm px-0 mx-0">
                 <a href="https://www.instagram.com/kajaldharmar/">
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="kajal">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="kajal">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -182,7 +184,7 @@
 
                 <a href="https://mahesmeh001.github.io/mypersonalwebsite/index.html">
 
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="mehul">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="mehul">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -219,13 +221,16 @@
         <div class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner w-100">
 
-                <div class="carousel-item active group-banner">
-                    <img alt="Image" class="w-100" src="img/Team/black16by9.jpg">
+                <div class="carousel-item active group-banner zoom" onclick="registrationToggle()"
+                     style="background-image: url('img/Team/marketing-overlay.png')">
+                    <img id="registrationImage" alt="Image" class="w-100" src="img/Team/black16by9.jpg">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
-                                    <p class="display-subtitle text-white">Registration</p>
+                                    <p id="registrationTitle" class="display-subtitle text-white m-fadeIn">Registration</p>
+                                    <p id="registrationDescription" class="display-description" style="display: none">
+                                        The main point of contact for teams looking to register at MTB!                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +248,7 @@
             <div class="col-sm px-0 mx-0">
 
                 <a href="https://www.instagram.com/nihalpingali001/">
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="nihal">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="nihal">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -275,7 +280,7 @@
 
                 <a href="https://www.instagram.com/riyanachawla/">
 
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="riyana">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="riyana">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -304,20 +309,21 @@
         </div> <!--end row-->
     </div>
 
-
     <!--directors-->
     <div class="container-fluid wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="directors">
         <div class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner w-100">
 
-                <div class="carousel-item active group-banner"
-                     style="height: auto; background-color: black; background-repeat: repeat-x;">
-                    <img alt="Image" class="w-100" src="img/Team/black16by9.jpg">
+                <div class="carousel-item active group-banner zoom" onclick="directorsToggle()">
+                    <img id="directorsImage" alt="Image" class="w-100" src="img/Team/black16by9.jpg">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
-                                    <p class="display-subtitle text-white">Directors</p>
+                                    <p id="directorsTitle" class="display-subtitle text-white m-fadeIn">Directors</p>
+                                    <p id="directorsDescription" class="display-description" style="display: none">
+                                        Responsible for providing direction and managing the board.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +341,7 @@
             <div class="col-sm px-0 mx-0">
 
                 <a href="https://www.instagram.com/rashmi.majjigapu/">
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="rashmi">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="rashmi">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -367,7 +373,7 @@
 
                 <a href="https://www.instagram.com/manisha.muthu_/">
 
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="manisha">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="manisha">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -397,20 +403,21 @@
     </div>
 
 
-
-    <!--head liason-->
-    <div class="container-fluid wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="liason">
+    <!--liaisons-->
+    <div class="container-fluid wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="liaisons">
         <div class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner w-100">
 
-                <div class="carousel-item active group-banner"
-                     style="height: auto; background-color: black; background-repeat: repeat-x;">
-                    <img alt="Image" class="w-100" src="img/Team/black16by9.jpg">
+                <div class="carousel-item active group-banner zoom" onclick="liaisonsToggle()">
+                    <img id="liaisonsImage" alt="Image" class="w-100" src="img/Team/black16by9.jpg">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
-                                    <p class="display-subtitle text-white">Head Liasons</p>
+                                    <p id="liaisonsTitle" class="display-subtitle text-white m-fadeIn">Head Liaisons</p>
+                                    <p id="liaisonsDescription" class="display-description" style="display: none">
+                                        Responsible for managing the Liaisons.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -428,7 +435,7 @@
             <div class="col-sm px-0 mx-0">
 
                 <a href="https://www.instagram.com/dishababra/">
-                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="disha">
+                    <div class="container wow fadeInUp px-0 mx-0 zoom" data-wow-delay="0.1s" id="disha">
                         <div class="carousel slide" data-bs-ride="carousel" >
                             <div class="carousel-inner w-100">
 
@@ -438,8 +445,8 @@
                                         <div class="container">
                                             <div class="row justify-content-start">
                                                 <div class="col-lg-8 text-start">
-                                                    <p class="display-firstname text-white">Rashmi</p>
-                                                    <p class="display-lastname text-white"></p>
+                                                    <p class="display-firstname text-white">Disha</p>
+                                                    <p class="display-lastname text-white">Barbra</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -455,44 +462,44 @@
             </div> <!--end of column-->
 
 
-
             <div class="col-sm px-0 mx-0">
 
-<!--                <a href="https://www.instagram.com/riyanachawla/">-->
+                <a href="https://www.instagram.com/riyanachawla/">
 
-<!--                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="rohan">-->
-<!--                        <div class="carousel slide" data-bs-ride="carousel" >-->
-<!--                            <div class="carousel-inner w-100">-->
+                    <div class="container wow fadeInUp px-0 mx-0" data-wow-delay="0.1s" id="rohan">
+                        <div class="carousel slide" data-bs-ride="carousel" >
+                            <div class="carousel-inner w-100">
 
-<!--                                <div class="carousel-item active">-->
-<!--                                    <img alt="Image" class="w-100" src="img/Team/black16by9.jpg">-->
-<!--                                    <div class="carousel-caption">-->
-<!--                                        <div class="container">-->
-<!--                                            <div class="row justify-content-end">-->
-<!--                                                <div class="col-lg-8 text-end">-->
-<!--                                                    <p class="display-firstname text-white"></p>-->
-<!--                                                    <p class="display-lastname text-white"></p>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <div class="carousel-item active">
+                                    <img alt="Image" class="w-100" src="img/Team/black16by9.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row justify-content-end">
+                                                <div class="col-lg-8 text-end">
+                                                    <p class="display-firstname text-white"></p>
+                                                    <p class="display-lastname text-white"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
             </div> <!--end of column-->
 
-            <div style="text-align: center; " class="my-5">
-                <a href="#">
-                    <i class="fa fa-thin fa-angle-up fa-2xl fa-bounce" style="color: #ffffff;"></i>
-                </a>
-            </div>
 
 
         </div> <!--end row-->
+    </div>
+
+    <div style="text-align: center; " class="my-5">
+        <a href="#">
+            <i class="fa fa-thin fa-angle-up fa-2xl fa-bounce" style="color: #ffffff;"></i>
+        </a>
     </div>
 
     <div style="text-align: center;">
@@ -512,6 +519,231 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+<!--    TODO - add nav fade in / out-->
+
+<!--    toggles for the group banners-->
+    <script>
+        function marketingToggle() {
+            let title = document.getElementById('marketingTitle');
+            let description = document.getElementById('marketingDescription');
+            let image = document.getElementById('marketingImage');
+
+
+            //if the description is showing
+            //0) unblur the image
+            //1) remove fadeIn from description and add fadeOut
+            //2) set display of the description to none
+            //3) remove fadeOut from the title and add fadeIn
+            //4) set display of the title to ""
+            if(title.classList.contains("m-fadeOut")){
+
+                image.classList.remove("blur");
+
+                description.classList.remove("m-fadeIn");
+                description.classList.add("m-fadeOut");
+
+                description.style.display="none";
+
+                title.classList.remove("m-fadeOut");
+                title.classList.add("m-fadeIn");
+
+                title.style.display="";
+
+            }
+
+            //if the title is showing
+                //0) blur the image
+                //1) remove fadeIn from title and add fadeOut
+                //2) set display of the title to none
+                //3) remove fadeOut from the description and add fadeIn
+                //4) set display of the description to ""
+            else {
+
+                image.classList.add("blur");
+
+
+                if(title.classList.contains("m-fadeIn")){
+                    title.classList.remove("m-fadeIn");
+                }
+                title.classList.add("m-fadeOut");
+
+                title.style.display="none";
+
+                description.classList.remove("m-fadeOut");
+                description.classList.add("m-fadeIn");
+
+                description.style.display="";
+
+            }
+        }
+
+        function registrationToggle() {
+            let title = document.getElementById('registrationTitle');
+            let description = document.getElementById('registrationDescription');
+            let image = document.getElementById('registrationImage');
+
+
+            //if the description is showing
+            //0) unblur the image
+            //1) remove fadeIn from description and add fadeOut
+            //2) set display of the description to none
+            //3) remove fadeOut from the title and add fadeIn
+            //4) set display of the title to ""
+            if(title.classList.contains("m-fadeOut")){
+
+                image.classList.remove("blur");
+
+                description.classList.remove("m-fadeIn");
+                description.classList.add("m-fadeOut");
+
+                description.style.display="none";
+
+                title.classList.remove("m-fadeOut");
+                title.classList.add("m-fadeIn");
+
+                title.style.display="";
+
+            }
+
+                //if the title is showing
+                //0) blur the image
+                //1) remove fadeIn from title and add fadeOut
+                //2) set display of the title to none
+                //3) remove fadeOut from the description and add fadeIn
+            //4) set display of the description to ""
+            else {
+
+                image.classList.add("blur");
+
+
+                if(title.classList.contains("m-fadeIn")){
+                    title.classList.remove("m-fadeIn");
+                }
+                title.classList.add("m-fadeOut");
+
+                title.style.display="none";
+
+                description.classList.remove("m-fadeOut");
+                description.classList.add("m-fadeIn");
+
+                description.style.display="";
+
+            }
+        }
+
+        function directorsToggle() {
+            let title = document.getElementById('directorsTitle');
+            let description = document.getElementById('directorsDescription');
+            let image = document.getElementById('directorsImage');
+
+
+            //if the description is showing
+            //0) unblur the image
+            //1) remove fadeIn from description and add fadeOut
+            //2) set display of the description to none
+            //3) remove fadeOut from the title and add fadeIn
+            //4) set display of the title to ""
+            if(title.classList.contains("m-fadeOut")){
+
+                image.classList.remove("blur");
+
+                description.classList.remove("m-fadeIn");
+                description.classList.add("m-fadeOut");
+
+                description.style.display="none";
+
+                title.classList.remove("m-fadeOut");
+                title.classList.add("m-fadeIn");
+
+                title.style.display="";
+
+            }
+
+                //if the title is showing
+                //0) blur the image
+                //1) remove fadeIn from title and add fadeOut
+                //2) set display of the title to none
+                //3) remove fadeOut from the description and add fadeIn
+            //4) set display of the description to ""
+            else {
+
+                image.classList.add("blur");
+
+
+                if(title.classList.contains("m-fadeIn")){
+                    title.classList.remove("m-fadeIn");
+                }
+                title.classList.add("m-fadeOut");
+
+                title.style.display="none";
+
+                description.classList.remove("m-fadeOut");
+                description.classList.add("m-fadeIn");
+
+                description.style.display="";
+
+            }
+        }
+
+        function liaisonsToggle() {
+            let title = document.getElementById('liaisonsTitle');
+            let description = document.getElementById('liaisonsDescription');
+            let image = document.getElementById('liaisonsImage');
+
+
+            //if the description is showing
+            //0) unblur the image
+            //1) remove fadeIn from description and add fadeOut
+            //2) set display of the description to none
+            //3) remove fadeOut from the title and add fadeIn
+            //4) set display of the title to ""
+            if(title.classList.contains("m-fadeOut")){
+
+                image.classList.remove("blur");
+
+                description.classList.remove("m-fadeIn");
+                description.classList.add("m-fadeOut");
+
+                description.style.display="none";
+
+                title.classList.remove("m-fadeOut");
+                title.classList.add("m-fadeIn");
+
+                title.style.display="";
+
+            }
+
+                //if the title is showing
+                //0) blur the image
+                //1) remove fadeIn from title and add fadeOut
+                //2) set display of the title to none
+                //3) remove fadeOut from the description and add fadeIn
+            //4) set display of the description to ""
+            else {
+
+                image.classList.add("blur");
+
+
+                if(title.classList.contains("m-fadeIn")){
+                    title.classList.remove("m-fadeIn");
+                }
+                title.classList.add("m-fadeOut");
+
+                title.style.display="none";
+
+                description.classList.remove("m-fadeOut");
+                description.classList.add("m-fadeIn");
+
+                description.style.display="";
+
+            }
+        }
+
+
+    </script>
+
 </body>
 
 </html>
