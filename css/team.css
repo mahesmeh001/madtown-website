@@ -1,11 +1,16 @@
 .display-title{
     font-weight: bold;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .display-subtitle{
     font-weight: bold;
     font-size: 45px;
+}
+
+.display-description{
+    font-weight: normal;
+    font-size: 20px;
 }
 
 .display-table-contents{
@@ -19,6 +24,18 @@
 }
 
 .display-lastname{
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
+}
+
+.group-banner{
+    height: auto;
+    background-color: black;
+    background-size: contain;
+    background-repeat: repeat-x;
+    max-height: 50vh;
+}
+
+.individuals{
+    font-family: 'arsenica_trialthin_italic';
 }
