@@ -1,12 +1,15 @@
-Stuff I want for the website from other ppl:
-- navbar on mobile needs to make sense
-- website hype video asap (last years works for now, just need it as a youtube embed)
+TODO:
+-shift layering of thing
+- sponsors page
+- last years page
+    - last years board pic
+    - winners / runner ups (team pics?)
+    -
+
 
 
 thoughts for myself
 product.html or service.html-> SPONSORS page
-
-
 
 
 
