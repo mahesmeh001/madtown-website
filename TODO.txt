@@ -1,10 +1,11 @@
 TODO:
+-try photoshopping paghs onto homepic via adobe photoshop
 -shift layering of thing
 - sponsors page
 - last years page
     - last years board pic
     - winners / runner ups (team pics?)
-    -
+-figure out why nav is flickering on hover
 
 
 
