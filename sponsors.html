@@ -12,9 +12,10 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+          rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,15 +31,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        :root {
+            --primary: #89067F;
+            --secondary: #3A00CC;
+            --light: #FFEECF;
+            --dark: #141414;
+        }
+
+        #goldModalBtn:hover,
+        #goldModalCloseBtn:hover {
+            background-color: #89067F;
+            color: #FFEECF;
+            border-color: #3A00CC;
+        }
+
+        .list-group-item {
+            background-color: #FFF7E8;
+        }
+    </style>
+
 </head>
 
-<body style="font-family: 'arsenica_trialthin'; background-color: white; font-weight: 100">
+<body style="font-family: 'arsenica_trialthin'; background-color: #FFF7E8; font-weight: 100;">
 <!-- Spinner Start -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+<div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+     id="spinner">
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
 </div>
 <!-- Spinner End -->
-
 
 
 <!-- Navbar Start -->
@@ -58,21 +81,7 @@
             <a class="nav-item nav-link text-white" href="information.html" id="nav-2">Information</a>
             <a class="nav-item nav-link active-light text-white" href="sponsors.html" id="nav-active">Sponsors</a>
             <a class="nav-item nav-link text-white" href="team.html" id="nav-3">Meet the Team</a>
-            <!--                <div class="nav-item dropdown">-->
-            <!--                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
-            <!--                    <div class="dropdown-menu bg-light m-0">-->
-            <!--                        <a href="gallery.html" class="dropdown-item">Gallery</a>-->
-            <!--                        <a href="feature.html" class="dropdown-item">Features</a>-->
-            <!--                        <a href="team.html" class="dropdown-item">Our Team</a>-->
-            <!--                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
-            <!--                        <a href="404.html" class="dropdown-item">404 Page</a>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <a href="contact.html" class="nav-item nav-link">Contact</a>-->
         </div>
-        <!--            <div class="border-start ps-4 d-none d-lg-block">-->
-        <!--                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>-->
-        <!--            </div>-->
     </div>
 </nav>
 <!-- Navbar End -->
@@ -81,82 +90,196 @@
 <div class="container-xxl py-5">
     <div class="container">
 
+<!--        header-->
         <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 90vw;">
-            <p class="section-title bg-white text-center px-3" style="color: black">Partner with us!</p>
+            <p class="section-title text-center px-3" style="color: black; background-color: #FFF7E8">Partner with
+                us!</p>
             <h1 class="container-fluid" style="color: black">Sponsorship Information</h1>
+
+<!--            socials links-->
+
+            <div class="container" style="width: 30%">
+                <div class="row">
+                    <div class="col">
+                        <a href="mailto:madtownbhangra@gmail.com?subject=Mail from Sponors Page">
+                            <i class="fas fa-envelope" style="color: #89067f;"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/madtownbhangra/?hl=en">
+                        <i class="fab fa-instagram" style="color: #89067f;"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.facebook.com/madtownbhangra2020/">
+
+                        <i class="fab fa-facebook" style="color: #89067f;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="color: black; opacity: 100%" >
         </div>
 
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <a href="img/Sponsors/Sponsorship%20Packet.pdf" target="_blank">
-                    <button type="button" class="btn btn-primary btn-lg rounded-0">
-                        <h5 style="font-size: small;color: white" class="mx-5 my-4">
-                            Learn More!
-                        </h5>
-                    </button>
-                </a>
-            </div>
 
 
-        <br>
+        <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 90vw;">
 
-<!--        h4 is on hover turn grey-->
+            <p class="text-center px-3 pb-2" style="color: black">
+                Partnering with us helps promote your business to a diverse audience of young adults, professionals, and
+                the South Asian community in the Midwest! Beyond being able to take advantage of our various packaged
+                benefits, being a sponsor means providing a platform to hundreds of collegiate dancers as well as
+                contributing to our distinctive philanthropic initiative.
+            </p>
 
-        <div class="row gy-5 gx-4">
-            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item d-flex h-100">
-                    <div class="service-img">
-                        <img alt="" class="img-fluid" src="img/Sponsors/gold-texture.jpg">
-                    </div>
-                    <div class="service-text p-5 pt-0">
-                        <div class="service-icon">
-                            <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/gold-texture.jpg">
-                        </div>
-                        <h5 class="mb-3">Gold Package</h5>
-                        <p class="mb-4">Our final tier package offering elite benefits.</p>
-                        <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item d-flex h-100">
-                    <div class="service-img">
-                        <img alt="" class="img-fluid" src="img/Sponsors/silver-texture.jpg">
-                    </div>
-                    <div class="service-text p-5 pt-0">
-                        <div class="service-icon">
-                            <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/silver-texture.jpg">
-                        </div>
-                        <h5 class="mb-3">Silver Package</h5>
-                        <p class="mb-4">Our middle tiered package offering benefits beyond the base layer.</p>
-                        <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item d-flex h-100">
-                    <div class="service-img">
-                        <img alt="" class="img-fluid" src="img/Sponsors/bronze-texture.jpg">
-                    </div>
-                    <div class="service-text p-5 pt-0">
-                        <div class="service-icon">
-                            <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/bronze-texture.jpg">
-                        </div>
-                        <h5 class="mb-3">Bronze Package</h5>
-                        <p class="mb-4">Our starting package proving exposure in various places.</p>
-                        <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
+            <p class="text-center px-3 pb-2" style="color: black">
+                To bring Madtown in person for the first time ever, success depends on robust partnerships. To help grow
+                our community and make this competition possible, consider becoming a sponsor today!
+            </p>
+
+            <a href="img/Sponsors/Sponsorship%20Packet.pdf" target="_blank">
+                <button class="btn btn-primary btn-lg rounded-0" type="button">
+                    <h5 class="mx-5 my-4" style="font-size: small;color: white">
+                        Learn More!
+                    </h5>
+                </button>
+            </a>
+
+
+            <br>
+            <br>
+            <hr style="color: black; opacity: 100%" >
+
         </div>
+
+
+
+
+        <!--        h4 is on hover turn grey-->
+<!--        breakdown-->
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+
+            <h2 class="container-fluid text-center" style="color: black">Package Breakdown</h2>
+
+
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 90vw;">
+
+                <p class="text-center px-3 pb-2" style="color: black">
+                    A more detailed breakdown of the benefits of partnering with us for your convenience.
+                </p>
+
+            </div>
+
+
+
+            <br>
+            <br>
+
+
+            <!--            modals-->
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img alt="" class="img-fluid" src="img/Sponsors/gold-texture.jpg">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/gold-texture.jpg">
+                            </div>
+                            <h5 class="mb-3">Gold Package</h5>
+                            <p class="mb-4">Our final tier package offering elite benefits.</p>
+                            <!--                        <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>-->
+
+
+                            <!-- Button trigger modal -->
+                            <button class="btn rounded-circle" data-bs-target="#goldModal" data-bs-toggle="modal"
+                                    id="goldModalBtn" type="button">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </button>
+
+
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="goldModalLabel" class="modal fade" id="goldModal"
+                                 tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content" style="background-color: #FFF7E8">
+                                        <div class="modal-header align-content-center">
+                                            <div style="width: 100%">
+                                                <h1 class="" id="goldModalLabel"
+                                                    style="width:100%; font-family: 'arsenica_trialregular'; font-size: 30px;color: rgba(0,0,0,0.93); text-align: left">
+                                                    Gold Package</h1>
+
+                                            </div>
+                                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                                    type="button"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p style="color:black;">
+                                                Everything from the silver package plus...
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Logo on event shirts</li>
+                                                <li class="list-group-item">Advertisement during awards ceremony</li>
+                                                <li class="list-group-item">Banner in event lobby</li>
+                                                <li class="list-group-item">Recognition in all MTB event emails</li>
+                                                <li class="list-group-item">Six complementary tickets</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-dismiss="modal" id="goldModalCloseBtn"
+                                                    type="button">Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img alt="" class="img-fluid" src="img/Sponsors/silver-texture.jpg">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/silver-texture.jpg">
+                            </div>
+                            <h5 class="mb-3">Silver Package</h5>
+                            <p class="mb-4">Our middle tiered package offering benefits beyond the base layer.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img alt="" class="img-fluid" src="img/Sponsors/bronze-texture.jpg">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img alt="" class="img-fluid rounded-circle" src="img/Sponsors/bronze-texture.jpg">
+                            </div>
+                            <h5 class="mb-3">Bronze Package</h5>
+                            <p class="mb-4">Our starting package proving exposure in various places.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
 <!-- Service End -->
 
 
-
-
-
-<div style="text-align: center;" class="container wow fadeIn" data-wow-delay="1s">
+<div class="container wow fadeIn" data-wow-delay="1s" style="text-align: center;">
     <p class="">
         Designed with HTML Codex
     </p>
@@ -172,6 +295,7 @@
 <script src="lib/counterup/counterup.min.js"></script>
 <script src="lib/parallax/parallax.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
+
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>

@@ -1,17 +1,16 @@
 TODO:
 -change home pic again
--try photoshopping paghs onto homepic via adobe photoshop
--shift layering of thing
-- sponsors page
+-try photoshopping paghs onto homepic via adobe photoshop <- ask kajal maybe?
 - last years page
     - last years board pic
     - winners / runner ups (team pics?)
 -figure out why nav is flickering on hover
 -switch background/text color for meet the team (table of contents section)
+-comparison table on sponsors page for each package
+-add mail to socials on homepage
+-shift layering of thing <- wait till everyone's pics are in
 
 
-thoughts for myself
-product.html or service.html-> SPONSORS page
 
 
 

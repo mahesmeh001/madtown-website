@@ -50,12 +50,12 @@
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color: var(--light);
+    color: #FFEECF;
 }
 
 .btn-secondary,
 .btn-outline-secondary:hover {
-    color: var(--dark);
+    color: #141414;
 }
 
 .btn-square {
@@ -315,7 +315,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: #FEE6ED;
+    border: 1px;
+    border-style: solid;
+    border-radius:10px;
+    border-color: #C483BF;
     transition: .5s ease-out;
     z-index: 2;
 }
@@ -329,10 +333,10 @@
 .service-item .service-text .service-icon {
     width: 140px;
     height: 140px;
-    padding: 15px;
+    padding: 5px;
     margin-top: -70px;
     margin-bottom: 40px;
-    background: #FFFFFF;
+    background: #89067F;
     border-radius: 140px;
     overflow: hidden;
     box-shadow: 0 0 60px rgba(0, 0, 0, .1);
