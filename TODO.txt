@@ -10,9 +10,15 @@ TODO:
 -add mail to socials on homepage
 -shift layering of thing <- wait till everyone's pics are in
 
+HOMEPAGE:
+-fade in mission statement on homepage? try fade up vs in... break down text block to be more readable
+-separate video from mission statement with <hr>
+-consider putting one sentence before the video that is THE PERFECT SENTENCE
 
-
-
+MEET THE TEAM PAGE:
+-keep the meet the team header the same font as the madtown logo or the homepage headers
+-add translucent background to the subheading text (Marketing, Resgistration, etc..) (make it rounded)
+-navbar changes fonts --- keep it the same
 
 
 
