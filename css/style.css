@@ -805,3 +805,8 @@ body.is-preload #wrapper.fade-in:before {
     }
 
 }
+
+
+.modal-backdrop{
+    z-index: 0;
+}

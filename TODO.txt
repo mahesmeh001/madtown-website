@@ -1,24 +1,34 @@
 TODO:
--change home pic again
 -try photoshopping paghs onto homepic via adobe photoshop <- ask kajal maybe?
 - last years page
     - last years board pic
     - winners / runner ups (team pics?)
 -figure out why nav is flickering on hover
--switch background/text color for meet the team (table of contents section)
--comparison table on sponsors page for each package
--add mail to socials on homepage
 -shift layering of thing <- wait till everyone's pics are in
 
 HOMEPAGE:
 -fade in mission statement on homepage? try fade up vs in... break down text block to be more readable
 -separate video from mission statement with <hr>
 -consider putting one sentence before the video that is THE PERFECT SENTENCE
+-add mail to socials on homepage
+
 
 MEET THE TEAM PAGE:
 -keep the meet the team header the same font as the madtown logo or the homepage headers
 -add translucent background to the subheading text (Marketing, Resgistration, etc..) (make it rounded)
 -navbar changes fonts --- keep it the same
+
+
+SPONSORS PAGE:
+-comparison table on sponsors page for each package
+
+
+
+
+
+
+
+
 
 
 
