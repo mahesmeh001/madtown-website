@@ -32,6 +32,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!--    retro font family-->
+    <link href="fonts/sawarabi/stylesheet.css" rel="stylesheet">
+    <link href="fonts/arsenica/stylesheet.css" rel="stylesheet">
+
 
     <style>
         :root {
@@ -51,11 +55,28 @@
         .list-group-item {
             background-color: #FFF7E8;
         }
+
+        h5{
+            font-family: arsenica_trialbold;
+        }
+
+        .card{
+            background-color: transparent;
+        }
+
+        /* Important part */
+        .modal-dialog{
+            overflow-y: initial !important
+        }
+        .modal-body{
+            height: 80vh;
+            overflow-y: auto;
+        }
     </style>
 
 </head>
 
-<body style="font-family: 'arsenica_trialthin'; background-color: #FFF7E8; font-weight: 100; z-index: 0">
+<body style="font-family: 'sawarabi_minchoregular'; background-color: #FFF7E8; font-weight: 100; z-index: 0">
 <!-- Spinner Start -->
 <div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
      id="spinner">
@@ -65,7 +86,7 @@
 
 
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark px-4 px-lg-5" id="navbarBackground" id="navbar"
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark px-4 px-lg-5" id="navbar"
      style="background-color: black;">
     <a class="navbar-brand d-flex align-items-center m-fadeIn" href="index.html" id="madtown">
         <h1 class="m-0 text-white" style="font-family: 'arsenica_trialregular'">Madtown</h1>
@@ -181,6 +202,8 @@
                 <!--            modals-->
                 <div class="row gy-5 gx-4">
                     <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+
+                        <!--gold item-->
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img alt="" class="img-fluid" src="img/Sponsors/gold-texture.jpg">
@@ -196,41 +219,95 @@
 
                                 <!-- Button trigger modal -->
                                 <button class="btn rounded-circle" data-bs-target="#goldModal" data-bs-toggle="modal"
-                                        id="goldModalBtn" type="button">
+                                        id="goldModalBtn" type="button" onclick="modalOpen()">
                                     <i class="bi bi-chevron-double-right"></i>
                                 </button>
 
 
                                 <!-- Modal -->
                                 <div aria-hidden="true" aria-labelledby="goldModalLabel" class="modal fade" id="goldModal"
-                                     tabindex="-1">
-                                    <div class="modal-dialog modal-dialog-centered">
+                                     tabindex="-1" >
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" style="height: 80vh">
                                         <div class="modal-content" style="background-color: #FFF7E8">
                                             <div class="modal-header align-content-center">
                                                 <div style="width: 100%">
-                                                    <h1 class="" id="goldModalLabel"
-                                                        style="width:100%; font-family: 'arsenica_trialregular'; font-size: 30px;color: rgba(0,0,0,0.93); text-align: left">
-                                                        Gold Package</h1>
+                                                    <h5 class="" id="goldModalLabel"
+                                                        style="width:100%; font-size: 30px;color: rgba(0,0,0,0.93); text-align: left">
+                                                        Gold Package</h5>
 
                                                 </div>
                                                 <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
-                                                        type="button"></button>
+                                                        type="button" onclick="modalClose()"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <p style="color:black;">
-                                                    Everything from the silver package plus...
-                                                </p>
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item">Logo on event shirts</li>
-                                                    <li class="list-group-item">Advertisement during awards ceremony</li>
-                                                    <li class="list-group-item">Banner in event lobby</li>
-                                                    <li class="list-group-item">Recognition in all MTB event emails</li>
-                                                    <li class="list-group-item">Six complementary tickets</li>
-                                                </ul>
+
+                                                <!--table-->
+                                                <div class="container overflow-hidden ">
+                                                    <div class="row g-2 mx-auto">
+                                                        <div class="col">
+                                                            <div class="card" style="max-width: 18rem;">
+                                                                <img class="card-img-top" src="img/Sponsors/silver-texture.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <p class="card-text" style="color: black">Everything from the sliver package is included!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col">
+                                                            <div class="card" style="max-width: 18rem;">
+                                                                <img class="card-img-top" src="img/Sponsors/award-ceremony-background-square.png" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <p class="card-text" style="color: black">Advertisement during award ceremony!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="row g-2 mx-auto">
+                                                            <div class="col">
+                                                                <div class="card" style="max-width: 18rem;">
+                                                                    <img class="card-img-top" src="img/Sponsors/memorial-union-square.jpg" alt="Card image memorial union">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="color: black">Your banner in the event lobby!</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col">
+
+                                                                <div class="col">
+                                                                    <div class="card" style="max-width: 18rem;">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text" style="color: black">Recognition in all MTB event emails!
+                                                                                <i class="fas fa-mail-bulk"></i>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col my-2">
+                                                                    <div class="card" style="max-width: 18rem;">
+                                                                        <div class="card-body">
+                                                                            <p class="card-text" style="color: black">Six additional complementary tickets!
+                                                                                <i class="fas fa-ticket-alt"></i>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
                                             </div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-primary" data-bs-dismiss="modal" id="goldModalCloseBtn"
-                                                        type="button">Close
+                                                        type="button" onclick="modalClose()">Close
                                                 </button>
                                             </div>
                                         </div>
@@ -304,6 +381,26 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+
+<!--function to handle opening / closing the navbar-->
+<script>
+    function modalOpen(){
+        hideNav();
+    }
+    function modalClose(){
+        showNav();
+    }
+
+    function hideNav() {
+        document.getElementById("navbar").style.display = "none";
+    }
+
+    function showNav() {
+        document.getElementById("navbar").style.display = "";
+    }
+</script>
+
 </body>
 
 </html>

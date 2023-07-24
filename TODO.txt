@@ -31,8 +31,46 @@ SPONSORS PAGE:
 
 
 
-
 WORKSPACE
+
+
+modal attempt 1:
+                                <!-- Modal -->
+                                <div aria-hidden="true" aria-labelledby="goldModalLabel" class="modal fade" id="goldModal"
+                                     tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content" style="background-color: #FFF7E8">
+                                            <div class="modal-header align-content-center">
+                                                <div style="width: 100%">
+                                                    <h1 class="" id="goldModalLabel"
+                                                        style="width:100%; font-family: 'arsenica_trialregular'; font-size: 30px;color: rgba(0,0,0,0.93); text-align: left">
+                                                        Gold Package</h1>
+
+                                                </div>
+                                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                                        type="button"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p style="color:black;">
+                                                    Everything from the silver package plus...
+                                                </p>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">Logo on event shirts</li>
+                                                    <li class="list-group-item">Advertisement during awards ceremony</li>
+                                                    <li class="list-group-item">Banner in event lobby</li>
+                                                    <li class="list-group-item">Recognition in all MTB event emails</li>
+                                                    <li class="list-group-item">Six complementary tickets</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-dismiss="modal" id="goldModalCloseBtn"
+                                                        type="button">Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
 
 
