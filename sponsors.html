@@ -225,10 +225,10 @@
 
 
                                 <!-- Modal -->
-                                <div aria-hidden="true" aria-labelledby="goldModalLabel" class="modal fade" id="goldModal"
+                                <div aria-hidden="true" aria-labelledby="goldModalLabel" class="modal fade " id="goldModal"
                                      tabindex="-1" >
-                                    <div class="modal-dialog modal-dialog-centered modal-lg" style="height: 80vh">
-                                        <div class="modal-content" style="background-color: #FFF7E8">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content" style="background-color: #FFF7E8; height: 80vh">
                                             <div class="modal-header align-content-center">
                                                 <div style="width: 100%">
                                                     <h5 class="" id="goldModalLabel"
@@ -242,9 +242,9 @@
                                             <div class="modal-body">
 
                                                 <!--table-->
-                                                <div class="container overflow-hidden ">
-                                                    <div class="row g-2 mx-auto">
-                                                        <div class="col">
+                                                <div class="container overflow-hidden">
+                                                    <div class="row gx-5 gy-3">
+                                                        <div class="col-lg">
                                                             <div class="card" style="max-width: 18rem;">
                                                                 <img class="card-img-top" src="img/Sponsors/silver-texture.jpg" alt="Card image cap">
                                                                 <div class="card-body">
@@ -253,7 +253,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col">
+                                                        <div class="col-lg">
                                                             <div class="card" style="max-width: 18rem;">
                                                                 <img class="card-img-top" src="img/Sponsors/award-ceremony-background-square.png" alt="Card image cap">
                                                                 <div class="card-body">
@@ -263,41 +263,40 @@
                                                         </div>
 
 
-                                                        <div class="row g-2 mx-auto">
-                                                            <div class="col">
-                                                                <div class="card" style="max-width: 18rem;">
-                                                                    <img class="card-img-top" src="img/Sponsors/memorial-union-square.jpg" alt="Card image memorial union">
-                                                                    <div class="card-body">
-                                                                        <p class="card-text" style="color: black">Your banner in the event lobby!</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="col">
+                                                    </div>
 
-                                                                <div class="col">
-                                                                    <div class="card" style="max-width: 18rem;">
-                                                                        <div class="card-body">
-                                                                            <p class="card-text" style="color: black">Recognition in all MTB event emails!
-                                                                                <i class="fas fa-mail-bulk"></i>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col my-2">
-                                                                    <div class="card" style="max-width: 18rem;">
-                                                                        <div class="card-body">
-                                                                            <p class="card-text" style="color: black">Six additional complementary tickets!
-                                                                                <i class="fas fa-ticket-alt"></i>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
+                                                    <div class="row gx-5 gy-3 my-3 ">
+                                                        <div class="col-lg">
+                                                            <div class="card" style="max-width: 18rem;">
+                                                                <img class="card-img-top" src="img/Sponsors/memorial-union-square.jpg" alt="Card image memorial union">
+                                                                <div class="card-body">
+                                                                    <p class="card-text" style="color: black">Your banner in the event lobby!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
 
+                                                        <div class="col-lg">
 
-
+                                                            <div class="col-lg">
+                                                                <div class="card" style="max-width: 18rem;">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="color: black">Recognition in all MTB event emails!
+                                                                            <i class="fas fa-mail-bulk"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg my-3">
+                                                                <div class="card" style="max-width: 18rem;">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="color: black">Six additional complementary tickets!
+                                                                            <i class="fas fa-ticket-alt"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -383,13 +382,17 @@
 <script src="js/main.js"></script>
 
 
-<!--function to handle opening / closing the navbar-->
+<!--function to handle opening / closing the modal-->
+<!--hide/show nav no longer needed bc backdrop is over everything else -->
 <script>
     function modalOpen(){
-        hideNav();
+        // hideNav();
+
+        // ensures modal appears above backdrop
+        document.body.appendChild(document.getElementById('goldModal'));
     }
     function modalClose(){
-        showNav();
+        // showNav();
     }
 
     function hideNav() {
