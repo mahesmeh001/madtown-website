@@ -3,8 +3,8 @@ TODO:
 - last years page
     - last years board pic
     - winners / runner ups (team pics?)
--figure out why nav is flickering on hover
 -shift layering of thing <- wait till everyone's pics are in
+-edit 404 page
 
 HOMEPAGE:
 -fade in mission statement on homepage? try fade up vs in... break down text block to be more readable

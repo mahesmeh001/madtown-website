@@ -100,21 +100,30 @@
 }
 
 
-/* TODO - change active to be italicized and underlined and not centered*/
+/*cause of flickering - this sets the base but it gets re-written in the next few classes which we dont want*/
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active-light {
-    padding: 2px 10px;align-self: center; border: thin solid white;}
+    padding-left: 15px;
+    padding-right: 15px;
+    align-self: start;
+    border: thin solid white;
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active-dark {
-    padding: 2px 10px;align-self: center; border: thin solid #ffffff;}
+}
+
+/*never using navbar-dark*/
+/*.navbar .navbar-nav .nav-link:hover,*/
+/*.navbar .navbar-nav .nav-link.active-dark {*/
+
+/*    align-self: start;*/
+/*    border: thin solid #ffffff;*/
+/*}*/
 
 .navbar .dropdown-toggle::after {
     border: hidden;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    vertical-align: middle;
+    /*vertical-align: center;*/
     margin-left: 8px;
 }
 
@@ -146,6 +155,8 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+
+
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -153,6 +164,8 @@
         visibility: visible;
         transition: .5s;
         opacity: 1;
+
+
     }
 }
 
