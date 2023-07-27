@@ -68,10 +68,11 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Libre Baskerville", serif;
+    /*font-family: "Libre Baskerville", serif;*/
+    font-family: 'sawarabi_minchoregular';
     font-weight: 700;
     line-height: 1.2;
-    color: #404A3D
+    color: black;
 }
 
 h1, .h1 {

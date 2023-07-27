@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Milky - Dairy Website Template</title>
+    <title>404 Error Page</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,9 +30,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--    retro font family-->
+    <link href="fonts/sawarabi/stylesheet.css" rel="stylesheet">
+    <link href="fonts/arsenica/stylesheet.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="font-family: 'sawarabi_minchoregular'; background-color: #fae8ed; color: black">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
@@ -40,57 +44,23 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>+012 345 6789</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">Milky</h1>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark px-4 px-lg-5" id="navbar"
+         style="background-color: black;">
+        <a class="navbar-brand d-flex align-items-center m-fadeIn" href="index.html" id="madtown">
+            <h1 class="m-0 text-white" style="font-family: 'arsenica_trialregular'">Madtown</h1>
+            <img alt="logo" src="img/favicon.ico" style="height: 75px; width: 75px"/>
         </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar-toggler me-0" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon navbar-light"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item active">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <div class="border-start ps-4 d-none d-lg-block">
-                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            <div class="navbar-nav ms-auto p-4 p-lg-0 navbar-dark">
+                <a class=" nav-item nav-link text-white" href="index.html" id="nav-1" style="">Home</a>
+                <a class="nav-item nav-link text-white" href="information.html" id="nav-2">Information</a>
+                <a class="nav-item nav-link text-white" href="sponsors.html" id="nav-active">Sponsors</a>
+                <a class="nav-item nav-link text-white" href="team.html" id="nav-3">Meet the Team</a>
             </div>
         </div>
     </nav>
@@ -100,14 +70,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">404 Page</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">404 Page</li>
-                </ol>
-            </nav>
+            <h1 class="display-1 mb-4 animated text-white slideInDown">404 Page</h1>
         </div>
     </div>
     <!-- Page Header End -->
@@ -118,78 +81,90 @@
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                    <h1 class="display-1">404</h1>
+                    <i class="fas fa-exclamation-triangle display-1" style="color: #E57238"></i>
+<!--                    <h1 class="display-1">404</h1>-->
                     <h1 class="mb-4">Page Not Found</h1>
-                    <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Go Back To Home</a>
+                    <p class="mb-4">We’re sorry, the page you have looked for is either under development, or does not exist in our website!</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="index.html">Go Back To Home</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- 404 End -->
-        
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Our Office</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+
+<!--    TODO-insert gallery of photos-->
+
+    <!-- Gallery Start -->
+    <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-5.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-1.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-1.jpg">
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-2.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-6.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-6.jpg">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-7.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-3.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-3.jpg">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-4.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-4.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" data-lightbox="gallery" href="img/gallery-8.jpg">
+                            <img alt="" class="img-fluid" src="img/gallery-8.jpg">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+    <!-- Gallery End -->
+
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid bg-secondary text-body copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </div>
-            </div>
-        </div>
+    <div class="container wow fadeIn" data-wow-delay="1s" style="text-align: center;">
+        <p class="">
+            Designed with HTML Codex
+        </p>
     </div>
     <!-- Copyright End -->
 
