@@ -200,7 +200,7 @@ a {
 }
 
 a:hover {
-    color: #497041
+    color: purple;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2871,8 +2871,8 @@ textarea.form-control-lg {
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #000;
-    background-color: #749d6b;
-    border-color: #6b9862;
+    background-color: #89067F;
+    border-color: #3A00CC;
     box-shadow: 0 0 0 .25rem rgba(77, 119, 69, 0.5)
 }
 
