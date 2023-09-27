@@ -105,7 +105,7 @@
 .navbar .navbar-nav .nav-link.active-light {
     padding-left: 15px;
     padding-right: 15px;
-    align-self: start;
+    align-self: center;
     border: thin solid white;
 
 }
@@ -139,6 +139,8 @@
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+        align-self: center;
+
     }
 
     .navbar .navbar-nav {
